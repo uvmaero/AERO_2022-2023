@@ -22,6 +22,7 @@
 
 // Inputs
 #define CAN_MESSAGE_INTERRUPT_PIN           15             
+#define VICORE_PIN                          25
 
 
 // Outputs

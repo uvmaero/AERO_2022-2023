@@ -12,6 +12,8 @@
 #include <WiFi.h>
 #include <mcp_can.h>
 #include "pinConfig.h"
+#include <ArduinoJson.h>
+
 
 
 // *** defines *** // 
@@ -127,16 +129,25 @@ void setup()
   // --- initialize sensors --- //
   pinMode(WHEEL_SPEED_BR_SENSOR, INPUT);
   pinMode(WHEEL_SPEED_BL_SENSOR, INPUT);
+  
   pinMode(WHEEL_HEIGHT_BR_SENSOR, INPUT);
   pinMode(WHEEL_HEIGHT_BL_SENSOR, INPUT);
   
-  // TODO: finish adding pin modes
+  pinMode(WATER_TMP_IN_PIN, INPUT);
+  pinMode(WATER_TMP_OUT_PIN, INPUT);
+
+  // --- initialize inputs --- //
+
+  pinMode(CAN_MESSAGE_INTERRUPT_PIN, INPUT);
+  pinMode(VICORE_PIN, INPUT);
   
 
   // --- initalize outputs --- //
-
-
-  // TODO: ^^^^^ what that says
+  pinMode(PUMP_ENABLE_PIN, OUTPUT);
+  pinMode(BRAKE_LIGHT_PIN, OUTPUT);
+  pinMode(FAN_ENABLE_PIN, OUTPUT); 
+  pinMode(IMD_FAULT_PIN, OUTPUT);  
+  pinMode(BMS_FAULT_PIN, OUTPUT);
 
 
   // --- initalize CAN --- //
@@ -197,7 +208,11 @@ void setup()
 // *** loop *** // 
 void loop()
 {
-  // everything is on a timer so nothing happens here! 
+  // everything is on a timer so only brake light happens here, since it is relatively low-priority! 
+
+
+  // write brake light status
+  analogWrite(BRAKE_LIGHT_PIN, (carData.inputs.brake0 || carData.inputs.brake1));
 }
 
 
@@ -207,6 +222,13 @@ void loop()
  */
 void PollSensorData()
 {
+
+  // what pins?
+  // vicoretemp
+  // pumptempin
+  // pumptempout
+
+
   // disable interrupts
   portENTER_CRITICAL_ISR(&timerMux);
 
@@ -215,6 +237,10 @@ void PollSensorData()
 
 
   // TODO: gather data from sensors and store in car data struct
+  carData.inputs.vicoreTemp = analogRead(VICORE_PIN);
+  carData.inputs.pumpTempIn = analogRead(WATER_TMP_IN_PIN);
+  carData.inputs.pimpTempOut = analogRead(WATER_TMP_OUT_PIN);
+
 
 
   // turn wifi back on to re-enable esp-now connection to wheel board
@@ -249,7 +275,6 @@ void CANRead()
     case 0x100:
     // do stuff with the data in the message
     break;
-
     // message from RCB: BMS and electrical data
     case 0x101:
     // do stuff with the data in the message
@@ -307,6 +332,57 @@ void LogCarData()
 
 
   // TODO: write data frame to SD card
+  DynamicJsonDocument dataFrame(1024);
+
+  dataFrame["time"] = esp_timer_get_time();
+
+  // --- INPUTS --- //
+
+  dataFrame["DrivingData"]["readyToDrive"] = carData.drivingData.readyToDrive;
+  dataFrame["DrivingData"]["enableInverter"] = carData.drivingData.enableInverter;
+  
+  dataFrame["DrivingData"]["imdFault"] = carData.drivingData.imdFault;
+  dataFrame["DrivingData"]["bmsFault"] = carData.drivingData.bmsFault;
+
+  dataFrame["DrivingData"]["commandedTorque"] = carData.drivingData.commandedTorque;
+  dataFrame["DrivingData"]["currentSpeed"] = carData.drivingData.currentSpeed;
+  dataFrame["DrivingData"]["driveDirection"] = carData.drivingData.driveDirection;
+  dataFrame["DrivingData"]["driveMode"] = carData.drivingData.driveMode;
+  
+  // --- SENSORS --- //
+
+  dataFrame["Sensors"]["wheels"]["speed"]["FR"] = carData.sensors.wheelHeightFR;
+  dataFrame["Sensors"]["wheels"]["speed"]["FL"] = carData.sensors.wheelHeightFL;
+  dataFrame["Sensors"]["wheels"]["speed"]["BR"] = carData.sensors.wheelHeightBR;
+  dataFrame["Sensors"]["wheels"]["speed"]["BL"] = carData.sensors.wheelHeightBL;
+
+  dataFrame["Sensors"]["wheels"]["height"]["FR"] = carData.sensors.wheelHeightFR;
+  dataFrame["Sensors"]["wheels"]["height"]["FL"] = carData.sensors.wheelHeightFL;
+  dataFrame["Sensors"]["wheels"]["height"]["BR"] = carData.sensors.wheelHeightBR;
+  dataFrame["Sensors"]["wheels"]["height"]["BL"] = carData.sensors.wheelHeightBL;
+
+  dataFrame["Sensors"]["steeringWheelAngle"] = carData.sensors.steeringWheelAngle;
+
+  // --- INPUTS --- //
+
+  dataFrame["Inputs"]["pedal0"] = carData.inputs.pedal0;
+  dataFrame["Inputs"]["pedal1"] = carData.inputs.pedal1;
+
+  dataFrame["Inputs"]["brake0"] = carData.inputs.brake0;
+  dataFrame["Inputs"]["brake1"] = carData.inputs.brake1;
+
+  dataFrame["Inputs"]["brakeRegen"] = carData.inputs.brakeRegen;
+  dataFrame["Inputs"]["coastRegen"] = carData.inputs.coastRegen;
+
+  dataFrame["Inputs"]["vicoreTemp"] = carData.inputs.vicoreTemp;
+  dataFrame["Inputs"]["pumpTempIn"] = carData.inputs.pumpTempIn;
+  dataFrame["Inputs"]["pimpTempOut"] = carData.inputs.pimpTempOut;
+
+  // --- OUTPUTS --- //
+
+  dataFrame["Outputs"]["buzzerActive"] = carData.outputs.buzzerActive;
+  dataFrame["Outputs"]["buzzerCounter"] = carData.outputs.buzzerCounter;
+  dataFrame["Outputs"]["brakeLight"] = carData.outputs.brakeLight;
 
 
   // re-enable interrupts
