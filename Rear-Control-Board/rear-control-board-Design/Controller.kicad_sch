@@ -1145,7 +1145,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4bdeb4da-fa89-4313-bf61-55df5ce24cdf)
   )
-  (text "DNP\n" (at 252.73 140.97 0)
+  (text "?" (at 253.238 140.843 0)
     (effects (font (size 1.27 1.27) bold italic) (justify left bottom))
     (uuid c9368087-f9fc-40e2-89e3-88d8f1291403)
   )

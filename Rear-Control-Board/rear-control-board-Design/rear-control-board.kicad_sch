@@ -1691,11 +1691,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8845bd25-4bb8-4b2a-9e58-d0555060d6bd)
   )
-  (text "01/20/2022    |    22.020    |    G.Spearing" (at 208.28 194.31 0)
+  (text "12/20/2022    |    22.020    |    C.Grund" (at 208.28 194.31 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 94a10cae-6ef2-4b64-9d98-fb22aa3306cc)
   )
-  (text "Rear Control Board\nFunctions: CAN, Wheel Speed, Dampers, Fan, Pump, Brake, Main Power Fuses, BRB I/O\n- CAN from rinehart to HVB\nCAN is temrinated on Rineart (start of line)\nEnd of line is the Pacman Side 2"
+  (text "Rear Control Board\nFunctions: CAN, Wheel Speed, Dampers, Fan, Pump, Brake, Main Power Fuses, BRB I/O\n- CAN from rinehart to HVB\nCAN is temrinated on BMS (start of line)\nEnd of line is the Rear"
     (at 178.435 177.165 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a7fc0812-140f-4d96-9cd8-ead8c1c610b1)
