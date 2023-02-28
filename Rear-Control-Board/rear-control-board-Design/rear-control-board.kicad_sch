@@ -164,6 +164,40 @@
         )
       )
     )
+    (symbol "AERO_Symbols:TS2940CP33_ROG" (in_bom yes) (on_board yes)
+      (property "Reference" "U" (id 0) (at 0 10.16 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "TS2940CP33_ROG" (id 1) (at 0 7.62 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "TS2940CP33_ROG_0_1"
+        (rectangle (start -5.08 2.54) (end 5.08 -5.08)
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type background))
+        )
+      )
+      (symbol "TS2940CP33_ROG_1_1"
+        (pin power_in line (at -7.62 0 0) (length 2.54)
+          (name "VI" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_out line (at 0 -7.62 90) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_out line (at 7.62 0 180) (length 2.54)
+          (name "Vo" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -778,49 +812,6 @@
         )
       )
     )
-    (symbol "Regulator_Linear:NCP1117-5.0_TO252" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "U2" (id 0) (at 0 5.8715 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "TS2940CP33 ROG" (id 1) (at 0 3.0964 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (id 2) (at 0 5.715 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://www.taiwansemi.com/assets/uploads/datasheet/TS2940_D15.pdf" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "REGULATOR LDO 5.0V 5V" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "1A Low drop-out regulator, Fixed Output 5.0V, TO-252 (DPAK)" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "TO?252*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "NCP1117-5.0_TO252_0_1"
-        (rectangle (start -5.08 1.905) (end 5.08 -5.08)
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-      )
-      (symbol "NCP1117-5.0_TO252_1_1"
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_out line (at 7.62 0 180) (length 2.54)
-          (name "VO" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -7.62 0 0) (length 2.54)
-          (name "VI" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Simulation_SPICE:DIODE" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -1070,6 +1061,9 @@
   (junction (at 44.45 139.7) (diameter 0) (color 0 0 0 0)
     (uuid 7c33b4de-c121-4a87-acaf-79467f30a585)
   )
+  (junction (at 133.604 188.468) (diameter 0) (color 0 0 0 0)
+    (uuid 7f40e069-bf8b-4f0f-8080-3ecd893d9ca5)
+  )
   (junction (at 44.45 154.94) (diameter 0) (color 0 0 0 0)
     (uuid 9640e044-e4b2-4c33-9e1c-1d9894a69337)
   )
@@ -1078,6 +1072,9 @@
   )
   (junction (at 65.405 82.55) (diameter 0) (color 0 0 0 0)
     (uuid a15bc363-ddc1-4bfe-9eb1-656647777f30)
+  )
+  (junction (at 117.221 175.768) (diameter 0) (color 0 0 0 0)
+    (uuid a641082c-9693-4390-a77e-aef3da7adab5)
   )
   (junction (at 44.45 157.48) (diameter 0) (color 0 0 0 0)
     (uuid ab999689-c099-4335-8d02-0c70f8aa45ea)
@@ -1091,9 +1088,6 @@
   (junction (at 94.107 77.47) (diameter 0) (color 0 0 0 0)
     (uuid c92c8b98-585f-4866-b931-6fae4c8082b7)
   )
-  (junction (at 117.221 175.768) (diameter 0) (color 0 0 0 0)
-    (uuid e99409a8-5050-470d-8901-319c367df61e)
-  )
   (junction (at 44.45 121.92) (diameter 0) (color 0 0 0 0)
     (uuid f01103a3-10cd-4183-a6ad-68f82deb17fc)
   )
@@ -1101,6 +1095,10 @@
     (uuid ff5982ae-85c5-45e3-9e04-43ce433cc94a)
   )
 
+  (wire (pts (xy 117.221 175.768) (xy 125.984 175.768))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 008da331-c2b3-489f-a92a-ed5dba4d63e7)
+  )
   (wire (pts (xy 200.025 35.56) (xy 220.98 35.56))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 034783e6-20e9-437d-a9a3-98f0c86834c6)
@@ -1112,6 +1110,10 @@
   (wire (pts (xy 24.13 142.24) (xy 44.45 142.24))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 04daf3dc-b96a-4b57-b2bf-ff664909e980)
+  )
+  (wire (pts (xy 133.604 183.388) (xy 133.604 188.468))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 0a070cc9-8abc-434a-b348-1cb23749c6e8)
   )
   (wire (pts (xy 133.731 188.722) (xy 133.731 188.468))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -1247,10 +1249,6 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 44b926bf-8bdd-4191-846d-2dfabab2cecb)
   )
-  (wire (pts (xy 133.731 183.388) (xy 133.731 188.468))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 45b4d6e9-a832-4244-8878-2773109194e7)
-  )
   (wire (pts (xy 34.417 182.88) (xy 24.765 182.88))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 46ddfb82-67b2-4ec4-9945-da33bff3c005)
@@ -1278,6 +1276,10 @@
   (wire (pts (xy 24.13 119.253) (xy 24.13 119.38))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 53bec161-4bb6-4382-84ae-a00f63c39f5a)
+  )
+  (wire (pts (xy 133.604 188.468) (xy 133.731 188.468))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 57641037-5717-4478-a0d0-e27308657bb3)
   )
   (wire (pts (xy 110.109 175.768) (xy 110.109 179.324))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -1351,17 +1353,13 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 7d178fab-a20b-43c5-b3d5-8fb17e7d08a1)
   )
-  (wire (pts (xy 141.351 175.768) (xy 147.574 175.768))
+  (wire (pts (xy 141.224 175.768) (xy 147.574 175.768))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 7d83f449-4245-415c-9f1f-15593f3fb720)
   )
   (wire (pts (xy 200.025 40.64) (xy 220.98 40.64))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 7e54933d-e413-4db8-964e-e9ba2cfba7ac)
-  )
-  (wire (pts (xy 117.221 175.768) (xy 126.111 175.768))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 81dd66b6-40a2-44e2-be53-f8a77204ebce)
   )
   (wire (pts (xy 38.735 33.655) (xy 45.085 33.655))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -1420,7 +1418,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 98624091-3add-4002-a75e-32916797ae00)
   )
-  (wire (pts (xy 117.221 188.468) (xy 133.731 188.468))
+  (wire (pts (xy 117.221 188.468) (xy 133.604 188.468))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 990cb2d8-6717-4cb0-a52d-12b9e257e47f)
   )
@@ -1683,7 +1681,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 604291f9-e254-4001-b011-122539f0c3be)
   )
-  (text "DON'T FORGET INLINE \nFUSE FOR BATT_12V" (at 176.53 144.78 0)
+  (text "DON'T FORGET INLINE \nFUSE FOR BATT_12V" (at 180.975 140.335 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 88311b66-a502-4973-9abb-db945a315f21)
   )
@@ -2002,6 +2000,13 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 1eb51291-7af4-45b3-a5d4-21f6d3047f6e)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 97.3587 175.8474 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "BATT_12" (shape input) (at 198.755 142.875 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid db14750c-f33b-4628-9139-308045429624)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 188.7503 142.7956 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2429,22 +2434,6 @@
     (pin "2" (uuid 5092e6e1-c713-4a0c-9b78-d82c47a52391))
   )
 
-  (symbol (lib_id "Regulator_Linear:NCP1117-5.0_TO252") (at 133.731 175.768 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid dbb94e1e-e341-4f83-bcd9-f51be721f344)
-    (property "Reference" "U2" (id 0) (at 133.731 169.8965 0))
-    (property "Value" "TS2940CP33 ROG" (id 1) (at 133.731 172.6716 0))
-    (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (id 2) (at 133.731 170.053 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.taiwansemi.com/assets/uploads/datasheet/TS2940_D15.pdf" (id 3) (at 133.731 175.768 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1bf237a2-1f04-44cc-8bfc-37ebc035590a))
-    (pin "2" (uuid f3062bd3-d0ea-46bc-af57-0e4bde3e76b1))
-    (pin "3" (uuid ae8c9396-40b9-45e8-bffe-d44005b03b9e))
-  )
-
   (symbol (lib_id "Device:D") (at 110.109 183.134 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid eb8f99b7-5235-480f-bd24-2b8cc328abbe)
@@ -2462,6 +2451,22 @@
     )
     (pin "1" (uuid 16b144b5-afc3-4987-a2a4-b8eecfc92823))
     (pin "2" (uuid 653f69e1-4871-416e-912f-258c09d5b39f))
+  )
+
+  (symbol (lib_id "AERO_Symbols:TS2940CP33_ROG") (at 133.604 175.768 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid ecdb0653-e4cf-42cd-bdef-ec63b3661292)
+    (property "Reference" "U2" (id 0) (at 133.604 168.148 0))
+    (property "Value" "TS2940CP33_ROG" (id 1) (at 133.604 170.688 0))
+    (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (id 2) (at 133.604 175.768 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 133.604 175.768 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 768a97fb-61e1-4ac9-bfb6-2fe362f7069b))
+    (pin "2" (uuid c6c13c12-d17b-422c-9c9c-9cb261067855))
+    (pin "3" (uuid e3b6e6b2-ad64-4400-82d5-aab6bf671c15))
   )
 
   (symbol (lib_id "power:GND") (at 44.45 101.6 90) (unit 1)
@@ -2747,6 +2752,9 @@
     (path "/7570dad3-830c-49a1-9e0c-6064301881e7"
       (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000061f4d99a/4aab149a-a52b-40c6-a20d-fc0593b55cb6"
+      (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000062054c3a/2db075e8-637d-4914-94f7-36e07df3b5ed"
       (reference "#PWR0110") (unit 1) (value "VDD") (footprint "")
     )
@@ -2762,17 +2770,23 @@
     (path "/00000000-0000-0000-0000-000061ef11ea/6a202750-1899-4e7a-9282-bfddf5c5815e"
       (reference "#PWR0114") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000061f4d99a/f2569412-7250-419e-b28a-dbe828cae304"
+      (reference "#PWR0115") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000062446591"
       (reference "#PWR0116") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061ef11ea/d806c9e7-761f-4ccd-8bba-605302ffc784"
       (reference "#PWR0117") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000062054c3a/00000000-0000-0000-0000-0000620849a4"
+    (path "/00000000-0000-0000-0000-000062054c3a/c838ea15-8abf-4bf4-99ab-78070eea3ea3"
       (reference "#PWR0118") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000062054c3a/00000000-0000-0000-0000-0000620856c2"
       (reference "#PWR0119") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061f4d99a/09fe9726-a1ec-4a3a-867a-188d385210f1"
+      (reference "#PWR0120") (unit 1) (value "GND") (footprint "")
     )
     (path "/a14b353c-b6de-46c2-a751-e1257e258fab"
       (reference "#PWR0121") (unit 1) (value "GND") (footprint "")
@@ -2816,20 +2830,23 @@
     (path "/00000000-0000-0000-0000-000061ef11ea/7bdd5a57-14ac-4541-8642-896c3fe3c5a5"
       (reference "#PWR0134") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000061f4d99a/5c6e310f-2307-45be-b549-b61292ad70d7"
+      (reference "#PWR0135") (unit 1) (value "GND") (footprint "")
+    )
     (path "/15331312-ad9b-4f6a-b30c-d10611882541/00be3e0e-1cda-42ae-8a7a-fd1ba99da230"
       (reference "#PWR0136") (unit 1) (value "+12V") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061f4d99a/342914ac-1f48-4f80-834d-5aea7d7aa892"
+    (path "/00000000-0000-0000-0000-000061f4d99a/7e565c57-cf5e-4d45-9192-db5e14ad7cb6"
+      (reference "#PWR0137") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061f4d99a/ea1e58a3-f0b3-40ba-b236-023bb61b130e"
       (reference "#PWR0138") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061ef11ea/c34ff648-03f9-4db2-83c5-c7164ba46f29"
       (reference "#PWR0139") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061f4d99a/52ce5fac-fe6a-4934-9e9a-d8b6fa7c556d"
+    (path "/00000000-0000-0000-0000-000062054c3a/dfb91a30-5ba7-4dcf-9674-b7875d224aa9"
       (reference "#PWR0140") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-000061f4d99a/ac9aedb7-520b-47ad-a46a-5121c7ad5660"
-      (reference "#PWR0141") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061ef11ea/5460b59f-b172-487d-9077-4f9acd6faac7"
       (reference "#PWR0142") (unit 1) (value "VDD") (footprint "")
@@ -2957,7 +2974,7 @@
     (path "/00000000-0000-0000-0000-0000621565e8"
       (reference "J3") (unit 1) (value "Conn_01x08") (footprint "AERO_Footprints:TE_1-776280-1_8pin_Horizontal")
     )
-    (path "/00000000-0000-0000-0000-000062054c3a/00000000-0000-0000-0000-000062058ae0"
+    (path "/00000000-0000-0000-0000-000062054c3a/1bd65667-3f00-4cfb-bc37-16cde0191c17"
       (reference "J4") (unit 1) (value "JST-B2B-VERT-2PIN") (footprint "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000062054c3a/00000000-0000-0000-0000-0000620582a9"
@@ -2969,6 +2986,9 @@
     (path "/00000000-0000-0000-0000-000061ef11ea/b1698c8b-d0cd-4216-a0b5-1b99da8a0202"
       (reference "J7") (unit 1) (value "Micro_SD_Card") (footprint "Connector_Card:microSD_HC_Wuerth_693072010801")
     )
+    (path "/00000000-0000-0000-0000-000062054c3a/93a9b75a-773f-4dac-938b-4fc4e2c4bc1a"
+      (reference "JP1") (unit 1) (value "SolderJumper_2_Open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
+    )
     (path "/00000000-0000-0000-0000-000061f130e5"
       (reference "K1") (unit 1) (value "T9VV1K15-12S") (footprint "AERO_Footprints:RELAY_T9VV1K15-12S")
     )
@@ -2978,20 +2998,26 @@
     (path "/00000000-0000-0000-0000-000062054c3a/00000000-0000-0000-0000-000062056119"
       (reference "K3") (unit 1) (value "G5V-2") (footprint "Relay_THT:Relay_DPDT_Omron_G5V-2")
     )
-    (path "/00000000-0000-0000-0000-000061f4d99a/0051d338-4d08-4d10-938a-c63d3458c064"
-      (reference "Q2") (unit 1) (value "PSMN5R2-60YL") (footprint "Package_TO_SOT_SMD:LFPAK56")
+    (path "/00000000-0000-0000-0000-000061f4d99a/e721cb9f-7a85-4f1d-bc03-39c846c71280"
+      (reference "K4") (unit 1) (value "G5V-1") (footprint "Relay_THT:Relay_SPDT_Omron_G5V-1")
     )
-    (path "/00000000-0000-0000-0000-000061f4d99a/51ade803-e43f-415b-acf1-cbe9b60e0555"
-      (reference "Q3") (unit 1) (value "PSMN5R2-60YL") (footprint "Package_TO_SOT_SMD:LFPAK56")
+    (path "/00000000-0000-0000-0000-000061f4d99a/71908956-d74d-4c3a-8347-bef07bcb6668"
+      (reference "K5") (unit 1) (value "G5V-1") (footprint "Relay_THT:Relay_SPDT_Omron_G5V-1")
     )
-    (path "/00000000-0000-0000-0000-000061f4d99a/8c93379b-1a32-47c1-bb56-36d702920175"
-      (reference "Q4") (unit 1) (value "PSMN5R2-60YL") (footprint "Package_TO_SOT_SMD:LFPAK56")
+    (path "/00000000-0000-0000-0000-000061f4d99a/c6fb777b-ec0f-47d0-9c9a-e7d426d0f435"
+      (reference "K6") (unit 1) (value "G5V-1") (footprint "Relay_THT:Relay_SPDT_Omron_G5V-1")
+    )
+    (path "/00000000-0000-0000-0000-000062054c3a/9ad5defa-c581-4f70-9c55-cd0f30004b84"
+      (reference "Q1") (unit 1) (value "2N7002") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
+    (path "/00000000-0000-0000-0000-000062054c3a/4ee758a5-3e1e-4ddd-ab49-03cc707a8848"
+      (reference "R1") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/9cd7a329-be98-4b6f-b451-5a50fe41a385"
       (reference "R2") (unit 1) (value "330") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
-    (path "/00000000-0000-0000-0000-000062054c3a/a645d298-5e2c-4165-97df-bf88b955622d"
-      (reference "R3") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    (path "/00000000-0000-0000-0000-000062054c3a/72d6176f-2f30-46cc-92a3-2cf5aff9f820"
+      (reference "R3") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000061ef11ea/3e9918f5-fe20-41be-989a-3532ae9c8232"
       (reference "R4") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
@@ -3008,11 +3034,14 @@
     (path "/00000000-0000-0000-0000-000062054c3a/501278f3-9e89-4e55-84ec-0ea299cdf950"
       (reference "R8") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
+    (path "/00000000-0000-0000-0000-000062054c3a/02e1262f-7738-4bf2-8e48-e158377afa2e"
+      (reference "R9") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-000061ef11ea/f9f1e0e1-c05e-4068-91f8-67895f3037cb"
       (reference "U1") (unit 1) (value "Dev_Board_C") (footprint "esp32:ESP32-DevKitC")
     )
-    (path "/dbb94e1e-e341-4f83-bcd9-f51be721f344"
-      (reference "U2") (unit 1) (value "TS2940CP33 ROG") (footprint "Package_TO_SOT_SMD:TO-252-2")
+    (path "/ecdb0653-e4cf-42cd-bdef-ec63b3661292"
+      (reference "U2") (unit 1) (value "TS2940CP33_ROG") (footprint "Package_TO_SOT_SMD:TO-252-2")
     )
     (path "/00000000-0000-0000-0000-000061ef11ea/0b846d51-e261-4e03-91d8-1ee797183838"
       (reference "U4") (unit 1) (value "MAX33054EASA+T") (footprint "AERO_Footprints:SOIC127P600X175-8N")
