@@ -2,7 +2,7 @@
 
   (uuid 2026567f-be64-41dd-8011-b0897ba0ff2e)
 
-  (paper "A4")
+  (paper "A")
 
   (lib_symbols
     (symbol "Device:D_KAK" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)

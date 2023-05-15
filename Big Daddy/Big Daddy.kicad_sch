@@ -1,0 +1,304 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e63e39d7-6ac0-4ffd-8aa3-1841a4541b55)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 31.496 140.3604) (size 51.8668 36.9316) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 86dc982f-3c1c-4a60-9b44-a3fbe3fd622a)
+    (property "Sheet name" "High Voltage" (id 0) (at 31.496 139.6488 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "High Voltage.kicad_sch" (id 1) (at 31.496 177.8766 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 194.7164 26.0096) (size 62.8396 35.6616) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 86f84094-3751-45ac-bbc5-d8f885869273)
+    (property "Sheet name" "Microcontrolller" (id 0) (at 194.7164 25.298 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Micro.kicad_sch" (id 1) (at 194.7164 62.2558 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 140.8176 62.1284) (size 29.3116 64.008) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 936ef640-daa4-477b-8659-90ac5ce07f80)
+    (property "Sheet name" "Connectors" (id 0) (at 140.8176 61.4168 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Connectors.kicad_sch" (id 1) (at 140.8176 126.721 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 34.6456 59.7408) (size 19.1008 61.2648) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08)
+    (property "Sheet name" "Fusing" (id 0) (at 34.6456 59.0292 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Fusing.kicad_sch" (id 1) (at 34.6456 121.5902 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "TSV" output (at 53.7464 79.248 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid a7b00559-e545-4d15-a845-2c9e23cea3ac)
+    )
+    (pin "SSOK" input (at 53.7464 75.5904 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 6b376194-041c-478c-a078-949d46e09821)
+    )
+    (pin "BRAKE_12V" output (at 53.7464 112.6236 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 216acc87-ba98-4850-a8b7-3eaa48bc2a8a)
+    )
+    (pin "PUMP_12V" output (at 53.7464 118.872 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 61da125d-384b-4a2c-8c39-2a53cf90c8dc)
+    )
+    (pin "BRB_LOOP" output (at 53.7464 103.5812 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 6311a956-4cb9-40ae-9097-d82be75240e2)
+    )
+    (pin "BMS_12V" output (at 53.7464 85.4964 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid bd0ddaf2-ddf7-4f9a-9b01-84e4a275f5ca)
+    )
+    (pin "FAN_12V" output (at 53.7464 115.824 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 0fda56f6-7db0-48f5-94dd-5ee9110584b6)
+    )
+    (pin "RINE_12V" output (at 53.7464 88.8492 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 1df64e17-9cdd-4edb-bcda-826db0dd141e)
+    )
+    (pin "FRONT_12V" output (at 53.7464 96.774 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 97f16c2e-aba5-4852-b450-9a9e400caa06)
+    )
+    (pin "Batt_12" input (at 53.7464 63.5 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid c4df56a5-a4a3-46d5-b83e-d237c2ae9033)
+    )
+    (pin "BRB_RTN" input (at 53.7464 66.04 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid c1b5a03b-3658-44f8-9d23-d2a3661eed3b)
+    )
+  )
+
+  (sheet (at 31.5976 18.1864) (size 45.1612 32.0548) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid c314850c-f5a5-4bfa-a486-3cc5290b57c5)
+    (property "Sheet name" "Latching" (id 0) (at 31.5976 17.4748 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Latching.kicad_sch" (id 1) (at 31.5976 50.8258 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "IMD_IND" output (at 76.7588 36.8808 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 4d2d773b-e7ff-45cb-ab5b-fa1a8de33af5)
+    )
+    (pin "LOOP_OUT" output (at 76.7588 30.5308 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 6085a256-a914-4be4-bcb7-883cb7d3f156)
+    )
+    (pin "IMD_FAULT_SIG" input (at 31.5976 41.0464 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 6075938e-8497-466a-9f55-74dd2449b5fb)
+    )
+    (pin "BMS_IND" output (at 76.7588 42.0624 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 0759e635-2b9b-44a3-8c0b-54b32bfd40bd)
+    )
+    (pin "LOOP_IN" input (at 31.5976 27.1272 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 913b231e-14c7-410a-aaa1-e1ec7ae8db76)
+    )
+    (pin "BMS_FAULT_SIG" input (at 31.5976 34.29 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 6e96e757-d6b9-4bf9-b375-a1d6dd84636f)
+    )
+  )
+
+  (sheet (at 202.8952 102.7684) (size 56.7436 37.5412) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid c46661ed-a775-494b-a22c-e989957c7bad)
+    (property "Sheet name" "Cooling" (id 0) (at 202.8952 102.0568 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Cooling.kicad_sch" (id 1) (at 202.8952 140.8942 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/86f84094-3751-45ac-bbc5-d8f885869273" (page "2"))
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08" (page "3"))
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5" (page "4"))
+    (path "/86dc982f-3c1c-4a60-9b44-a3fbe3fd622a/54b537a8-62a1-4be1-9498-f1c4ca3d7436" (page "9"))
+    (path "/86dc982f-3c1c-4a60-9b44-a3fbe3fd622a" (page "6"))
+    (path "/c46661ed-a775-494b-a22c-e989957c7bad" (page "7"))
+    (path "/86dc982f-3c1c-4a60-9b44-a3fbe3fd622a/7a2f50f6-0c99-4e8d-9c2a-8f2f961d2e6d" (page "8"))
+    (path "/86dc982f-3c1c-4a60-9b44-a3fbe3fd622a/edff7200-18c6-4e0c-99f9-a118fc24b63a" (page "9"))
+    (path "/936ef640-daa4-477b-8659-90ac5ce07f80" (page "10"))
+  )
+
+  (symbol_instances
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/135ac9a5-3d47-4cab-9c0d-b9bdf28432ad"
+      (reference "#PWR?") (unit 1) (value "VDD") (footprint "")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/53c9c80d-1aef-43b7-bac8-887165cc21e1"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/802b705d-7b74-4fec-8859-337e18f0baf4"
+      (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/9037c378-1baa-4d51-90fc-227832322b98"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/94eb84fd-05d9-4580-922f-c629a2c359f5"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/b2e7c3c2-6c5f-4b55-8e5a-9909634af6c0"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/c2d35aa9-4978-43ed-ab79-25f367f9e7e6"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/d1a36df1-5a51-492c-9a9f-effbb0092bf0"
+      (reference "#PWR?") (unit 1) (value "VDD") (footprint "")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/d6dddf2f-1f49-4727-8ef1-9cbd12110316"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/ea5e842e-aff6-458b-a847-2e549db82a93"
+      (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/6539cbd1-50bb-4d3c-82f9-984d64bc120e"
+      (reference "C?") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/c6856901-58da-4d47-8b84-a30396a67ec7"
+      (reference "C?") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/1eeecfbb-3527-478e-b14e-f1a92259fe26"
+      (reference "D?") (unit 1) (value "TS4148C RZG") (footprint "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/322423ce-39f0-4c0e-8e86-6102a6a7328a"
+      (reference "D?") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/5e35e39b-d7bf-4b0f-8cdd-623c4d2d708b"
+      (reference "D?") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/ec0769d5-8342-4541-99ef-679eace61bff"
+      (reference "D?") (unit 1) (value "LED") (footprint "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/05111ab9-6e84-4faf-ac98-509c156c2326"
+      (reference "F?") (unit 1) (value "10A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/1d6473b6-a0df-43b9-9a82-3fae03e8f825"
+      (reference "F?") (unit 1) (value "2A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/86dc982f-3c1c-4a60-9b44-a3fbe3fd622a/54b537a8-62a1-4be1-9498-f1c4ca3d7436/4c9128c5-4e66-4872-905d-7358c2bfd848"
+      (reference "F?") (unit 1) (value "Fuse") (footprint "")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/9736a5df-4470-4add-ab07-6030d7add6f0"
+      (reference "F?") (unit 1) (value "5A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/9f95b3e5-574e-4b13-aa54-938f00a6d9c1"
+      (reference "F?") (unit 1) (value "15A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/a65b6247-504a-4d90-80f2-b149657af60c"
+      (reference "F?") (unit 1) (value "2A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/bba6169a-2457-4e04-acf3-93e75be47e2e"
+      (reference "F?") (unit 1) (value "2A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/be806d61-ae7c-467e-83e3-23016bd8ee4d"
+      (reference "F?") (unit 1) (value "1A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/86dc982f-3c1c-4a60-9b44-a3fbe3fd622a/54b537a8-62a1-4be1-9498-f1c4ca3d7436/c3d6e08b-f0d2-496d-905f-deb56937883f"
+      (reference "F?") (unit 1) (value "Fuse") (footprint "")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/c58d3384-9ed8-4119-912e-c225860c48cc"
+      (reference "F?") (unit 1) (value "2A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/dd0fc000-acf3-44d6-a776-56e38333197f"
+      (reference "F?") (unit 1) (value "5A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/e6ea02ba-a9aa-425e-aa11-c8c8f79d7a95"
+      (reference "F?") (unit 1) (value "15A") (footprint "AERO_Footprints:Fuseholder_Blade_Mini_Keystone_3568")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/827bf8cb-b8fe-441c-9820-6008651e5541"
+      (reference "J?") (unit 1) (value "JST-B2B-VERT-2PIN") (footprint "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/d0fcb2a5-ca3e-4605-952f-e282d45fd53b"
+      (reference "J?") (unit 1) (value "JST-B2B-VERT-2PIN") (footprint "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/b8ac7135-7514-4a6e-af03-5daab7c1f525"
+      (reference "K?") (unit 1) (value "G5V-2") (footprint "Relay_THT:Relay_DPDT_Omron_G5V-2")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/f31795e1-bf4b-40fb-b2d8-26190b21c4ff"
+      (reference "K?") (unit 1) (value "T9VV1K15-12S") (footprint "AERO_Footprints:RELAY_T9VV1K15-12S")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/fa97145c-9d8e-414f-8c78-cf8c0ad86ece"
+      (reference "K?") (unit 1) (value "G5V-2") (footprint "Relay_THT:Relay_DPDT_Omron_G5V-2")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/bdb61224-0108-48a2-83c7-b0030c1de9e0"
+      (reference "Q?") (unit 1) (value "2N7002") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
+    (path "/86dc982f-3c1c-4a60-9b44-a3fbe3fd622a/54b537a8-62a1-4be1-9498-f1c4ca3d7436/005d423c-affc-44b9-b969-fcb91820399b"
+      (reference "R?") (unit 1) (value "10k") (footprint "")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/024dc82f-64b1-439e-a88c-9ebef07fdd04"
+      (reference "R?") (unit 1) (value "15") (footprint "")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/052f067f-10fb-4b03-a6cf-aca5b9d4f0e5"
+      (reference "R?") (unit 1) (value "10K") (footprint "")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/1e59e44b-30b0-4d28-9b2a-a8d8806b8e5d"
+      (reference "R?") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/27d137e4-3c99-4315-acf6-326e16c5a258"
+      (reference "R?") (unit 1) (value "10K") (footprint "")
+    )
+    (path "/86dc982f-3c1c-4a60-9b44-a3fbe3fd622a/54b537a8-62a1-4be1-9498-f1c4ca3d7436/3a2fcdd8-ffac-4f66-9995-597e61432034"
+      (reference "R?") (unit 1) (value "10k") (footprint "")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/41ad97a9-fa90-43ba-b894-343594c3ff20"
+      (reference "R?") (unit 1) (value "47k") (footprint "")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/9685dfb3-079c-44b1-b353-b4be89013d60"
+      (reference "R?") (unit 1) (value "330") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/c314850c-f5a5-4bfa-a486-3cc5290b57c5/ab011baf-4eaf-4a4c-b140-adad86b1f586"
+      (reference "R?") (unit 1) (value "6K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/c46661ed-a775-494b-a22c-e989957c7bad/5362a7bb-6a5c-4582-8a84-dd179357b30c"
+      (reference "U?") (unit 1) (value "TC4422AVOA") (footprint "Package_DIP:DIP-8-N6_W7.62mm")
+    )
+    (path "/86f84094-3751-45ac-bbc5-d8f885869273/55dce0dc-5b2a-4a0e-bd04-e38a8fa33a78"
+      (reference "U?") (unit 1) (value "ESP32-S3-DevKitC") (footprint "Espressif:ESP32-S3-DevKitC")
+    )
+    (path "/9c1412ff-15e3-4ef7-9c9c-e6f8f725cc08/841a7e74-47a7-43e9-bffb-88532f83f87f"
+      (reference "U?") (unit 1) (value "TS2940CP33_ROG") (footprint "Package_TO_SOT_SMD:TO-252-2")
+    )
+  )
+)

@@ -1,0 +1,19 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid aed29619-20e3-4982-a57b-73ff79c8b2d9)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "GND" (shape input) (at 103.0224 77.3176 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 1cf4b40a-cc1b-40dc-93ac-b2449ffc15a7)
+  )
+  (hierarchical_label "12+" (shape input) (at 102.4128 71.6788 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid dcf351cf-5819-43af-a2d9-3863cf0b9e2e)
+  )
+)

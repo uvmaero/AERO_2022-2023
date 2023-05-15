@@ -1,0 +1,19 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid fbdeacd2-5f57-493f-956d-539f97abf67b)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "Charge Saftey" (shape output) (at 78.74 76.2 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b75a2645-50cb-4b5e-a97f-e593162706a5)
+  )
+  (hierarchical_label "Charge Power" (shape input) (at 78.74 72.39 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c03e62c1-05c2-4b1e-9966-090335bf09ba)
+  )
+)

@@ -2,7 +2,7 @@
 
   (uuid 01024d27-e392-4482-9e67-565b0c294fe8)
 
-  (paper "A4")
+  (paper "A")
 
   (lib_symbols
     (symbol "AERO_Symbols:Vicor_AERO" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
@@ -1062,7 +1062,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0e592cd4-1950-44ef-9727-8e526f4c4e12)
   )
-  (text "Willem Hillier\nUVM AERO\n3/5/2019" (at 220.98 179.07 0)
+  (text "Willem Hillier\nUVM AERO\n3/5/2019" (at 161.8996 185.6232 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 1a813eeb-ee58-4579-81e1-3f9a7227213c)
   )

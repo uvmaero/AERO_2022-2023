@@ -2,7 +2,7 @@
 
   (uuid 3d416885-b8b5-4f5c-bc29-39c6376095e8)
 
-  (paper "A4")
+  (paper "A")
 
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
